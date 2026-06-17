@@ -1,0 +1,80 @@
+/* Configurações de cores gerais do jogo */
+:root {
+    --fundo-pedra: #121416;     /* Cinza bem escuro, quase preto */
+    --card-fundo: #1c1f22;      /* Um cinza um pouco mais claro para os posts */
+    --texto-neblina: #d1d5db;   /* Branco fosco/cinza claro para ler sem cansar os olhos */
+    --azul-espada: #54b3ff;     /* O azul brilhante dos pontos fracos dos Colossos */
+}
+
+/* Estilo do fundo da página inteira */
+body {
+    background-color: var(--fundo-pedra);
+    color: var(--texto-neblina);
+    font-family: 'Georgia', serif; /* Fonte com estilo mais antigo */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo do topo (Título do jogo) */
+header {
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 1px solid #333;
+}
+
+header h1 {
+    color: #ffffff;
+    letter-spacing: 4px; /* Deixa as letras mais espaçadas e imponentes */
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: var(--azul-espada);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Estilo da área dos posts */
+main {
+    max-width: 800px;
+    margin: 40px auto; /* Centraliza o conteúdo na tela */
+}
+
+/* Estilo de cada cartão de post */
+.card-colosso {
+    background-color: var(--card-fundo);
+    padding: 25px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    border-left: 4px solid #333; /* Uma bordinha discreta na esquerda */
+    transition: all 0.3s ease; /* Faz os efeitos acontecerem de forma suave */
+}
+
+/* O QUE ACONTECE QUANDO PASSA O MOUSE NO POST: Ele brilha em azul! */
+.card-colosso:hover {
+    border-left-color: var(--azul-espada);
+    box-shadow: 0 0 15px rgba(84, 179, 255, 0.3);
+    transform: translateY(-2px); /* Sobe de leve o card */
+}
+
+.numero {
+    color: var(--azul-espada);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.botao-ler {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--azul-espada);
+    text-decoration: none;
+    border: 1px solid var(--azul-espada);
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.botao-ler:hover {
+    background-color: var(--azul-espada);
+    color: var(--fundo-pedra);
+}
