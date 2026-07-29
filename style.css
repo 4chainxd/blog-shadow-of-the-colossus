@@ -78,3 +78,12 @@ main {
     background-color: var(--azul-espada);
     color: var(--fundo-pedra);
 }
+
+
+.imagem-post {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Cantos arredondados */
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
